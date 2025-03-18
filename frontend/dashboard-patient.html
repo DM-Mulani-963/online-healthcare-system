@@ -12,7 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="/frontend/styles/main.css">
     <!-- Theme Script -->
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -30,16 +30,16 @@
                 <div class="flex">
                     <!-- Logo -->
                     <div class="flex-shrink-0 flex items-center">
-                        <a href="/" class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                        <a href="/frontend/index.html" class="text-2xl font-bold text-blue-600 dark:text-blue-400">
                             HealthCare
                         </a>
                     </div>
                     <!-- Navigation Links -->
                     <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                        <a href="/dashboard-patient" class="nav-link active">Dashboard</a>
-                        <a href="/appointments" class="nav-link">Appointments</a>
-                        <a href="/medical-records" class="nav-link">Medical Records</a>
-                        <a href="/prescriptions" class="nav-link">Prescriptions</a>
+                        <a href="/frontend/dashboard-patient.html" class="nav-link active">Dashboard</a>
+                        <a href="/frontend/appointments.html" class="nav-link">Appointments</a>
+                        <a href="/frontend/medical-records.html" class="nav-link">Medical Records</a>
+                        <a href="/frontend/prescriptions.html" class="nav-link">Prescriptions</a>
                     </div>
                 </div>
                 <!-- Right Side Navigation -->
@@ -136,7 +136,7 @@
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8" data-aos="fade-up">
                 <div class="flex items-center justify-between mb-6">
                     <h2 class="text-xl font-bold text-gray-900 dark:text-white">Upcoming Appointments</h2>
-                    <a href="/appointments" class="text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 text-sm font-medium">View All</a>
+                    <a href="/frontend/appointments.html" class="text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 text-sm font-medium">View All</a>
                 </div>
                 <div class="overflow-x-auto">
                     <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
@@ -215,7 +215,7 @@
             <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6" data-aos="fade-up">
                 <div class="flex items-center justify-between mb-6">
                     <h2 class="text-xl font-bold text-gray-900 dark:text-white">Recent Medical Records</h2>
-                    <a href="/medical-records" class="text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 text-sm font-medium">View All</a>
+                    <a href="/frontend/medical-records.html" class="text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 text-sm font-medium">View All</a>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Record Card 1 -->
@@ -274,7 +274,7 @@
     </main>
 
     <!-- Custom JavaScript -->
-    <script src="./js/main.js"></script>
+    <script src="/frontend/js/main.js"></script>
     <script>
         // Initialize AOS
         AOS.init({
